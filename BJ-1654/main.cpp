@@ -12,8 +12,9 @@ unsigned int N, k;
 unsigned int result = 0;
 
 void bns(unsigned int low, unsigned int high) {
-	unsigned int mid = (low + high) / 2;
+	
 	while (low <= high) {
+		unsigned int mid = (low + high) / 2;
 		unsigned int now = 0;
 		for (int i = 0; i < vec.size(); i++) {
 			now += vec[i] / mid;
